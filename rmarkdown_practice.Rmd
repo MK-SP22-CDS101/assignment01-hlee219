@@ -1,6 +1,6 @@
 ---
 title: "Assignment 1: R Markdown practice"
-author: "FirstName LastName"
+author: "Hyoyong Lee"
 date: "`r Sys.Date()`"
 documentclass: article
 geometry: margin=1in
@@ -25,7 +25,39 @@ output:
 urlcolor: blue
 ---
 
-<!-- Write your Markdown below this line -->
+<!-- Write your Markdown below this line --> # Section
+**Section K02,G301**
+
+#Course Goals 
+By the end of the course, student wil be able to:
+
+- Use [GitHub](https://github.com) for creating a reproducible research document.
+      - My GitHub username is: *Hyoyong-Lee*. 
+  
+- Obtain, clean, transform, and visualize a dataset using the R programming language.
+
+- Interpret and predict dataset trends using statistical inference and models.
+
+- Critically examine and interpret statistical claims reported in mass media.
+
+# Including Code 
+## Running R code in a code chunk
+```{r}
+x <- 2+2
+x+3
+```
+
+The output of first line of code is not printed out because it is assigned to a varied instead. 
+
+The second line of output is printed out instead, but this means that the calculated value has not been saved for future use. 
+
+## Displaying Graphs
+```{r}
+ggplot2::qplot(data = iris, x = Sepal.Length, y = Sepal.Width)
+```
+
+
+
 
 
 
